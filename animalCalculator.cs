@@ -20,11 +20,10 @@ Console.Write($"Enter pounds of food per {nameInput} per day: ");
 double foodInput = Convert.ToDouble(Console.ReadLine());
 
 // Output Animal and food data
-double totalFood = countInput * foodInput;
 Console.WriteLine($"\nAnimal: {nameInput}");
 Console.WriteLine($"Count: {countInput}");
 Console.WriteLine($"Daily food: {foodInput} lbs/day");
 
-// Calculate additional data
+// Calculate and output additional data
 Console.WriteLine($"Total Daily Food: {countInput * foodInput} lbs");
 Console.WriteLine($"Total Weekly Food: {7 * (countInput * foodInput)} lbs");
