@@ -2,10 +2,9 @@
 // Collect animal data and calculate food requirements
 
 using System;
-// using Internal;
 
 // Title
-Console.WriteLine("=== Animal Information Entry ===");
+Console.WriteLine("\n=== Animal Information Entry ===");
 
 // Ask for animal name
 Console.Write("Enter an animal name: ");
@@ -19,9 +18,12 @@ int countInput = Convert.ToInt32(Console.ReadLine());
 Console.Write($"Enter pounds of food per {nameInput} per day: ");
 double foodInput = Convert.ToDouble(Console.ReadLine());
 
+// Data Calculation Section Title
+Console.WriteLine("\n=== Animal Summary ===");
+
 // Output Animal and food data
 // double totalFood = countInput * foodInput;
-Console.WriteLine($"\nAnimal: {nameInput}");
+Console.WriteLine($"Animal: {nameInput}");
 Console.WriteLine($"Count: {countInput}");
 Console.WriteLine($"Daily food: {foodInput} lbs/day");
 
